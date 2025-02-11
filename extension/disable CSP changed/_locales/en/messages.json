@@ -1,0 +1,6 @@
+{
+   "extDescription": {
+      "description": "The description of this extention",
+      "message": "Disable Content-Security-Policy for web application testing. When the icon is colored, CSP headers are disabled."
+   }
+}

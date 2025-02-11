@@ -1,0 +1,29 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "images/icon38-off.png"
+      },
+      "default_title": "CSP headers are enabled for this tab"
+   },
+   "author": "Phil Grayson / Changed by Luís Henrique de Almeida Gomes", 
+   "background": {
+      "service_worker": "service_worker.js"
+   },
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "homepage_url": "https://github.com/PhilGrayson/chrome-csp-disable",
+   "icons": {
+      "128": "images/icon128.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl7+fWOPq5eTshUtFFeOWjDHyaU3CbbnM4NhkpXiMzpYBvFGm4T4txJ18fIAq8eTOKWLX11Lv1HHO3pD3/w5cqkDu2yN9nKHv5cqDB28lc+mt7nE9CjAB4JV9rDwq/LJVdZOE/g9wlQN4hS0uHOeq502P5fPMzC4otK9yBietDM+vI296B/HAWtI6mSNq5RgqntgbByCyr/OJtjVUhWQNUFrqbu0Da59rjWfgKMNJwd6zo1LNxtRLM3QdabfI3hdr72lt+Ek+G9jhVwWA1sdYrvJslo+MhoguXT7Y1RrQNyWegFVC1uysoOR4TSQuuH+wzvm1HzyvV4VXHZbLwh3MyQIDAQAB",
+   "manifest_version": 3,
+   "name": "Disabel CORS",
+   "permissions": [ "storage", "activeTab", "browsingData", "declarativeNetRequest" ],
+   "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+   ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.0.0"
+}
