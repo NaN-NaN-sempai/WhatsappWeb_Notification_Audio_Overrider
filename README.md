@@ -3,7 +3,10 @@
 **WhatsappWeb_Notification_Audio_Overrider** is a service that changes the notification sound of the Whatsapp Web by using `Resource Override` to change the original sound requisition URL to a local Express Server URL.
 
 ### Follow the steps to run it:
-[1- Setup on Browser](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#setup-on-browser)
+### 1 - [Setup on Browser](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#setup-on-browser)
+### 2 - [Setup Resource Override](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#setup-resource-override)
+### 3 - [Instaling WhatsappWeb_Notification_Audio_Overrider server](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#instaling-whatsappweb_notification_audio_overrider-server)
+### 4 - [Editing Values](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#editing-values)
 
 
 # Setup on Browser
@@ -22,7 +25,19 @@ The original version does not save the pages that you disable CSP so i changed t
 
 Chrome: [`chrome://extensions/`](chrome://extensions/)
 
-Changed version at `../extension/disable CSP changed`
+Changed version at `../extension/disable CSP changed`.
+
+
+### After installing them, remenber to activate all of them on the Whatsapp Web page.
+
+`Allow CORS: Access-Control-Allow-Origin`: Click on the extension icon and click on the big "C" icon and it will turn colorfull when activated.
+
+`Disable Content-Security-Policy`: Remenber to be at the Whatsapp Page, then click on the extension icon, it will turn it on, restart the page. If you are using the unchanged version, when you close the browser or restart you computer you will need to do it again, in the changed version you do it only once.
+
+
+
+
+
 
 # Setup Resource Override
 ### Open the Resource Override Dashboard
@@ -72,7 +87,7 @@ Run on Bash
 npm i
 ```
 
-# Editing values
+# Editing Values
 ### If you want to use the bat file to open the server on Windows start up:
 
 In the `Whatsapp Audio Overrider.bat` file you will need to add you path on the line `2`:
@@ -99,5 +114,29 @@ To:
 ```
 const OPEN_WHATSAPP_CHROME_APP = true;
 ```
+
+### If you want to use you own file as the notification sound
+In the project directory delete the `audio.mp3` file and paste your own with the same filename.
+If your file is not a `.mp3` or you want to use another path you will need to change the const `AUDIO_FILEPATH` in the `index.js` line `5`:
+```
+const AUDIO_FILEPATH = '/audio.mp3';
+```
+
+
+
+# Testing
+### Testing the Express Server
+By running on VS Code console or by the BAT file the service will run a Express server at (if not changed) `http://localhost:3000/`, if you open the URL, you will be able to hear the new notification sound.
+
+### Testing the Security Disabling Extensions
+Open Whatsapp Web and open the `console` at the `Developer Tools` then make a requisition to any website not owned by Whatsapp.
+
+Example:
+```
+fetch("https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider")
+    .then(console.log)
+    .catch(()=>console.log("ERROR"))
+```
+If you see "ERROR" at the console after pasting it, they are not working
 
 
