@@ -7,7 +7,7 @@
 ### 2 - [Setup Resource Override](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#setup-resource-override)
 ### 3 - [Installing WhatsappWeb_Notification_Audio_Overrider server](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#Installing-whatsappweb_notification_audio_overrider-server)
 ### 4 - [Editing Values](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#editing-values)
-### 4 - [Testing](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider#testing)
+### 5 - [Testing](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider#testing)
 
 
 # Setup on Browser
@@ -133,7 +133,7 @@ By running on VS Code console or by the BAT file the service will run a Express 
 Open Whatsapp Web and open the `console` at the `Developer Tools` then make a requisition to any website not owned by Whatsapp.
 
 Example:
-```
+``` javascript
 fetch("https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider")
     .then(console.log)
     .catch(()=>console.log("ERROR"))
