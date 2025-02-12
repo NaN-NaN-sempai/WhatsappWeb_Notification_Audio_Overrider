@@ -1,4 +1,3 @@
-
 /* 
 If you are using the installed whatsapp web chrome app, you can open it automatically on windows startup after server is created by setting OPEN_WHATSAPP_CHROME_APP to "true"
 */
