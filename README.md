@@ -122,7 +122,7 @@ In the `Whatsapp Audio Overrider.bat` file you will need to add you path on the 
 ```
 cd /d "<your path>\whatsapp change notification sound"
 ```
-Go to the Windows Startup directory by running the `open startup folder.bat` file by executing `Win + R` and pasting 
+Go to the Windows Startup directory by running the `open startup folder.bat` file or by executing `Win + R` and pasting 
 ```
 shell:startup
 ```
