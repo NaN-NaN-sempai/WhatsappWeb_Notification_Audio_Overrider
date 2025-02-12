@@ -3,6 +3,7 @@
 **WhatsappWeb_Notification_Audio_Overrider** is a service that changes the notification sound of the Whatsapp Web by using `Resource Override` to change the original sound requisition URL to a local Express Server URL.
 
 ### Follow the steps to run it:
+[1- Setup on Browser](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#setup-on-browser)
 
 
 # Setup on Browser
