@@ -29,7 +29,7 @@ Modified version at `../extension/disable CSP changed`. Load it at Chrome's exte
 ### 4 - (Optional) A Userscript Extension - I use Tampermonkey:
 [`https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo`](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
- Sometimes the server cand be loaded at the first time and you need to restart the page, so i made a custom Userscript to reload the Whatsapp Web page if it does not reach the Express server. The code can be located in the next step.
+ Sometimes the server cant be loaded at the first time and you need to restart the page once, so i made a custom Userscript to reload the Whatsapp Web page if it does not reach the Express server. The code can be located in the next step.
 
 ### After installing them, remember to activate all of them on the Whatsapp Web page.
 
