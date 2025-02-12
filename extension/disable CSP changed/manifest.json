@@ -5,13 +5,13 @@
       },
       "default_title": "CSP headers are enabled for this tab"
    },
-   "author": "Phil Grayson / Changed by Luís Henrique de Almeida Gomes", 
+   "author": "Phil Grayson / Modified by Luís Henrique de Almeida Gomes", 
    "background": {
       "service_worker": "service_worker.js"
    },
    "default_locale": "en",
    "description": "__MSG_extDescription__",
-   "homepage_url": "https://github.com/PhilGrayson/chrome-csp-disable",
+   "homepage_url": "https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider",
    "icons": {
       "128": "images/icon128.png",
       "48": "images/icon48.png"
