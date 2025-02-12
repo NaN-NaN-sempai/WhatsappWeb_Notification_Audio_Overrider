@@ -24,8 +24,7 @@ Install these extensions
 
 The original version does not save the pages where you disable CSP, so I modified the code to work with this project. You can use the modified version by selecting 'Load Unpacked' in your browser's extension manager.
 
-
-Changed version at `../extension/disable CSP changed`. Load it at Chrome's extension manager: [`chrome://extensions/`](chrome://extensions/)
+Modified version at `../extension/disable CSP changed`. Load it at Chrome's extension manager: [`chrome://extensions/`](chrome://extensions/)
 
 
 ### After installing them, remember to activate all of them on the Whatsapp Web page.
