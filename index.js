@@ -2,6 +2,8 @@
 If you are using the installed whatsapp web chrome app, you can open it automatically on windows startup after server is created by setting OPEN_WHATSAPP_CHROME_APP to "true"
 */
 const OPEN_WHATSAPP_CHROME_APP = false;
+const AUDIO_FILEPATH = '/audio.mp3';
+
 const OPEN_WHATSAPP_CHROME_APP_BAT_FILE_PATH = './openWhatsApp.bat';
 
 
@@ -39,7 +41,7 @@ const port = 3000;
 const { exec } = require('child_process');
 
 app.get('/', (req, res) => {
-	res.sendFile(__dirname + '/audio.mp3');
+	res.sendFile(__dirname + AUDIO_FILEPATH);
 });
 
 app.listen(port, () => {
