@@ -80,7 +80,7 @@ https://web.whatsapp.com/
 ```
 
 ### Add Rule:
-Delete any existing rule by clickin in the `X` two times then add a new one with the type:
+Delete any existing rule by clicking in the `X` button two times then add a new one with the type:
 
 `(URL -> URL)`
 
