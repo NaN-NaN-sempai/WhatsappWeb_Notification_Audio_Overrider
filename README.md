@@ -26,6 +26,10 @@ The original version does not save the pages where you disable CSP, so I modifie
 
 Modified version at `../extension/disable CSP changed`. Load it at Chrome's extension manager: [`chrome://extensions/`](chrome://extensions/)
 
+### 4 - (Optional) A Userscript Extension - I use Tampermonkey:
+[`https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo`](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+
+ Sometimes the server cand be loaded at the first time and you need to restart the page, so i made a custom Userscript to reload the Whatsapp Web page if it does not reach the Express server. The code can be located in the next step.
 
 ### After installing them, remember to activate all of them on the Whatsapp Web page.
 
@@ -33,8 +37,33 @@ Modified version at `../extension/disable CSP changed`. Load it at Chrome's exte
 
 `Disable Content-Security-Policy`: remember to be at the Whatsapp Page, then click on the extension icon, it will turn it on, restart the page. If you are using the unmodified version, when you close the browser or restart you computer you will need to do it again, in the modified version you do it only once.
 
+`(Optional) A Userscript Extension - I use Tampermonkey`: add a new user script with this code:
+``` javascript
+// ==UserScript==
+// @name         Reload if no CSP
+// @namespace    http://tampermonkey.net/
+// @version      2025-02-12
+// @description  Reload if no CSP
+// @author       Luís Henrique de Almeida - https://luishenrique-resume.vercel.app/
+// @match        https://web.whatsapp.com/
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=whatsapp.com
+// @grant        none
+// ==/UserScript==
 
 
+(function() {
+    let doReload = true;
+
+    if(doReload){
+        fetch("http://localhost:3000/")
+            .then(() => console.log("CSP is Disabled, request http://localhost:3000/ OK"))
+            .catch(()=>{
+                location.reload();
+            })
+    }
+})();
+```
+Set `doRelaod` to `false` at line `14` until you make all the steps bellow, then turn it `true` to turn On the Userscript.
 
 
 
@@ -124,6 +153,7 @@ const AUDIO_FILEPATH = '/audio.mp3';
 
 
 # Testing
+After you did all the instalations remember to turn on the Userscript by setting `doRelaod` to `true` at line `14`.
 ### Testing the Express Server
 By running on VS Code console or by the BAT file the service will run a Express server at (if not changed) `http://localhost:3000/`, if you open the URL, you will be able to hear the new notification sound.
 
