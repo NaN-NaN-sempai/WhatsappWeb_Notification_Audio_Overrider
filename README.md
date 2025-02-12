@@ -137,6 +137,10 @@ fetch("https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Override
     .then(console.log)
     .catch(()=>console.log("ERROR"))
 ```
-If you see "ERROR" at the console after pasting it, they are not working
+If you see "ERROR" at the console after pasting it, they are not working, remenber to activate all the extensions: [After installing them, remenber to activate all of them on the Whatsapp Web page.](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider?tab=readme-ov-file#after-installing-them-remenber-to-activate-all-of-them-on-the-whatsapp-web-page)
 
+
+The BAT file opens a new stance of the service each time so if, by any reason, you need to restart it by the BAT file, go to the Windows Task Manager and kill any `Node.js JavaScript Runtime` task.
+
+If you activated the option to start the server on Windows start up  a CMD window will show on screen after turning On your computer, it is the BAT file beeing executed.
 
