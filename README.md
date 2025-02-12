@@ -5,7 +5,7 @@
 ### Follow the steps to run it:
 ### 1 - [Setup on Browser](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#setup-on-browser)
 ### 2 - [Setup Resource Override](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#setup-resource-override)
-### 3 - [Instaling WhatsappWeb_Notification_Audio_Overrider server](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#instaling-whatsappweb_notification_audio_overrider-server)
+### 3 - [Installing WhatsappWeb_Notification_Audio_Overrider server](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#Installing-whatsappweb_notification_audio_overrider-server)
 ### 4 - [Editing Values](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#editing-values)
 
 
@@ -21,18 +21,18 @@ Install these extensions
 
 [`https://chromewebstore.google.com/detail/disable-content-security/ieelmcmcagommplceebfedjlakkhpden`](https://chromewebstore.google.com/detail/disable-content-security/ieelmcmcagommplceebfedjlakkhpden)
 
-The original version does not save the pages that you disable CSP so i changed the code to be used in this extension, you can use the changed version by "Loading Without Packaging" on your browser extensions manager.
+The original version does not save the pages where you disable CSP, so I modified the code to work with this extension. You can use the modified version by selecting 'Load Unpacked' in your browser's extension manager.
 
 Chrome: [`chrome://extensions/`](chrome://extensions/)
 
 Changed version at `../extension/disable CSP changed`.
 
 
-### After installing them, remenber to activate all of them on the Whatsapp Web page.
+### After installing them, remember to activate all of them on the Whatsapp Web page.
 
 `Allow CORS: Access-Control-Allow-Origin`: Click on the extension icon and click on the big "C" icon and it will turn colorfull when activated.
 
-`Disable Content-Security-Policy`: Remenber to be at the Whatsapp Page, then click on the extension icon, it will turn it on, restart the page. If you are using the unchanged version, when you close the browser or restart you computer you will need to do it again, in the changed version you do it only once.
+`Disable Content-Security-Policy`: remember to be at the Whatsapp Page, then click on the extension icon, it will turn it on, restart the page. If you are using the unchanged version, when you close the browser or restart you computer you will need to do it again, in the changed version you do it only once.
 
 
 
@@ -66,11 +66,11 @@ https://static.whatsapp.net/rsrc.php/yW/r/BS_BUUXbKq5.mp3
 ```
 http://localhost:3000/
 ```
-The same URL of the expresse server, remenber to change it if you change the port.
+The same URL of the expresse server, remember to change it if you change the port.
 
 
 
-# Instaling WhatsappWeb_Notification_Audio_Overrider server
+# Installing WhatsappWeb_Notification_Audio_Overrider server
 ### Clone the Git project
 Run on Bash
 ```
@@ -137,10 +137,10 @@ fetch("https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Override
     .then(console.log)
     .catch(()=>console.log("ERROR"))
 ```
-If you see "ERROR" at the console after pasting it, they are not working, remenber to activate all the extensions: [After installing them, remenber to activate all of them on the Whatsapp Web page.](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider?tab=readme-ov-file#after-installing-them-remenber-to-activate-all-of-them-on-the-whatsapp-web-page)
+If you see "ERROR" at the console after pasting it, they are not working, remember to activate all the extensions: [After installing them, remember to activate all of them on the Whatsapp Web page.](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider?tab=readme-ov-file#after-installing-them-remember-to-activate-all-of-them-on-the-whatsapp-web-page)
 
 
-The BAT file opens a new stance of the service each time so if, by any reason, you need to restart it by the BAT file, go to the Windows Task Manager and kill any `Node.js JavaScript Runtime` task.
+The BAT file opens a new instance of the service each time so if, by any reason, you need to restart it by the BAT file, go to the Windows Task Manager and kill any `Node.js JavaScript Runtime` task.
 
-If you activated the option to start the server on Windows start up  a CMD window will show on screen after turning On your computer, it is the BAT file beeing executed.
+If you activated the option to start the server on Windows start up  a CMD window will show on screen after turning On your computer, it is the BAT file being executed.
 
