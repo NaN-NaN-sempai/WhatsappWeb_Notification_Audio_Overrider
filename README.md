@@ -179,4 +179,3 @@ If you activated the option to start the server on Windows start up  a CMD windo
 # Credits 
 ### PhilGrayson - Disable Content-Security-Policy
 [Chrome CSP Disable](https://github.com/PhilGrayson/chrome-csp-disable)
-
