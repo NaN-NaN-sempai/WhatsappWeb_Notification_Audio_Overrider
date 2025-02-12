@@ -7,6 +7,7 @@
 ### 2 - [Setup Resource Override](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#setup-resource-override)
 ### 3 - [Installing WhatsappWeb_Notification_Audio_Overrider server](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#Installing-whatsappweb_notification_audio_overrider-server)
 ### 4 - [Editing Values](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider/tree/main?tab=readme-ov-file#editing-values)
+### 4 - [Testing](https://github.com/NaN-NaN-sempai/WhatsappWeb_Notification_Audio_Overrider#testing)
 
 
 # Setup on Browser
@@ -143,4 +144,6 @@ If you see "ERROR" at the console after pasting it, they are not working, rememb
 The BAT file opens a new instance of the service each time so if, by any reason, you need to restart it by the BAT file, go to the Windows Task Manager and kill any `Node.js JavaScript Runtime` task.
 
 If you activated the option to start the server on Windows start up  a CMD window will show on screen after turning On your computer, it is the BAT file being executed.
+
+### If everything is okay, now when you receave a new message the new sound will play instead of the default one.
 
