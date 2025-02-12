@@ -143,5 +143,10 @@ The BAT file opens a new instance of the service each time so if, by any reason,
 
 If you activated the option to start the server on Windows start up  a CMD window will show on screen after turning On your computer, it is the BAT file being executed.
 
+
+# Credits 
+### PhilGrayson - Disable Content-Security-Policy
+[Chrome CSP Disable](https://github.com/PhilGrayson/chrome-csp-disable)
+
 ### If everything is okay, now when you receave a new message the new sound will play instead of the default one.
 
