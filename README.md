@@ -1,5 +1,9 @@
 # Explanation
-WhatsappWeb_Notification_Audio_Overrider
+### Be aware that this method disable some security features of the browser!
+**WhatsappWeb_Notification_Audio_Overrider** is a service that changes the notification sound of the Whatsapp Web by using `Resource Override` to change the original sound requisition URL to a local Express Server URL.
+
+### Follow the steps to run it:
+
 
 # Setup on Browser
 Install these extensions
@@ -60,8 +64,39 @@ Move to the project directory
 ```
 cd .\WhatsappWeb_Notification_Audio_Overrider\
 ```
+
 ### Install packages
 Run on Bash
 ```
 npm i
 ```
+
+# Editing values
+### If you want to use the bat file to open the server on Windows start up:
+
+In the `Whatsapp Audio Overrider.bat` file you will need to add you path on the line `2`:
+```
+cd /d "<your path>\whatsapp change notification sound"
+```
+Go to the Windows Startup directory by running the `open startup folder.bat` file by executing `Win + R` and pasting 
+```
+shell:startup
+```
+Then Copy and Paste the `Whatsapp Audio Overrider.bat` file in the directory that will open.
+
+### If you have a Whatsapp Web Webapp instaled and want to open it in the Windows start up:
+In the `openWhatsApp.bat` file you will need to add the Webapp path to the line `2`:
+```
+start "" "<path to whatsapp web installed chrome app>"
+```
+
+In the `index.js` file you will need to set the const `OPEN_WHATSAPP_CHROME_APP` to `true` on line `4`:
+```
+const OPEN_WHATSAPP_CHROME_APP = false;
+```
+To:
+```
+const OPEN_WHATSAPP_CHROME_APP = true;
+```
+
+
