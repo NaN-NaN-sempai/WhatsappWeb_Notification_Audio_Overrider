@@ -1,8 +1,8 @@
 
 /* 
-If you are using the installed whatsapp web chrome app, you can open it automatically on windows startup after server is created bt setting OPEN_WHATSAPP_CHROME_APP to true
+If you are using the installed whatsapp web chrome app, you can open it automatically on windows startup after server is created by setting OPEN_WHATSAPP_CHROME_APP to "true"
 */
-const OPEN_WHATSAPP_CHROME_APP = true;
+const OPEN_WHATSAPP_CHROME_APP = false;
 const OPEN_WHATSAPP_CHROME_APP_BAT_FILE_PATH = './openWhatsApp.bat';
 
 
@@ -17,9 +17,6 @@ Changed version ar "../extension/disable CSP changed"
 
 Resource Override:
 https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii
-
-PM2 (see .bat file):
-https://www.npmjs.com/package/pm2
 */
 
 /* CONFIGURATIONS:
