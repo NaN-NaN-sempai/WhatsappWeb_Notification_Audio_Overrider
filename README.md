@@ -22,18 +22,17 @@ Install these extensions
 
 [`https://chromewebstore.google.com/detail/disable-content-security/ieelmcmcagommplceebfedjlakkhpden`](https://chromewebstore.google.com/detail/disable-content-security/ieelmcmcagommplceebfedjlakkhpden)
 
-The original version does not save the pages where you disable CSP, so I modified the code to work with this extension. You can use the modified version by selecting 'Load Unpacked' in your browser's extension manager.
+The original version does not save the pages where you disable CSP, so I modified the code to work with this project. You can use the modified version by selecting 'Load Unpacked' in your browser's extension manager.
 
-Chrome: [`chrome://extensions/`](chrome://extensions/)
 
-Changed version at `../extension/disable CSP changed`.
+Changed version at `../extension/disable CSP changed`. Load it at Chrome's extension manager: [`chrome://extensions/`](chrome://extensions/)
 
 
 ### After installing them, remember to activate all of them on the Whatsapp Web page.
 
 `Allow CORS: Access-Control-Allow-Origin`: Click on the extension icon and click on the big "C" icon and it will turn colorfull when activated.
 
-`Disable Content-Security-Policy`: remember to be at the Whatsapp Page, then click on the extension icon, it will turn it on, restart the page. If you are using the unchanged version, when you close the browser or restart you computer you will need to do it again, in the changed version you do it only once.
+`Disable Content-Security-Policy`: remember to be at the Whatsapp Page, then click on the extension icon, it will turn it on, restart the page. If you are using the unmodified version, when you close the browser or restart you computer you will need to do it again, in the modified version you do it only once.
 
 
 
