@@ -63,7 +63,7 @@ Modified version at `../extension/disable CSP changed`. Load it at Chrome's exte
     }
 })();
 ```
-Set `doRelaod` to `false` at line `14` until you make all the steps bellow, then turn it `true` to turn On the Userscript.
+Set `doReload` to `false` at line `14` until you make all the steps bellow, then turn it `true` to turn On the Userscript.
 
 
 
@@ -153,7 +153,7 @@ const AUDIO_FILEPATH = '/audio.mp3';
 
 
 # Testing
-After you did all the instalations remember to turn on the Userscript by setting `doRelaod` to `true` at line `14`.
+After you did all the instalations remember to turn on the Userscript by setting `doReload` to `true` at line `14`.
 ### Testing the Express Server
 By running on VS Code console or by the BAT file the service will run a Express server at (if not changed) `http://localhost:3000/`, if you open the URL, you will be able to hear the new notification sound.
 
